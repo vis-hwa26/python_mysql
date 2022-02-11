@@ -16,9 +16,6 @@ cur.execute("create table if not exists appointment_details"
             "date varchar(20),"
             "time varchar(10))")
 
-
-
-
 #To register    
 def register():
     global e1,e2,e3,e4,e5,e6,root1
@@ -440,8 +437,3 @@ canvas=Canvas(root,width=600,height=600)
 canvas.place(x=0,y=480)
 my_image=PhotoImage(file='C:\\Users\\VIPUL PATEL\\Documents\\hos.gif')
 canvas.create_image(240,0, anchor = NW, image=my_image)
-
-
-
-
-
