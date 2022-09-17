@@ -225,7 +225,7 @@ def ser_avail():
 def search_one():
     global A
     p1=A.get()
-    query2="""Select * from register where Aadharcard_no={}""".format(p1)
+    query2="""Select * from register where Aadharcard_no='{}'""".format(p1)
     cur.execute(query2)
     data=cur.fetchone()
     print(data)
@@ -315,7 +315,7 @@ def modify():
     root9.geometry("500x500")
     global m1
     p1=m1.get()
-    cur.execute('select * from register where Aadharcard_no={}'.format(p1))
+    cur.execute('select * from register where Aadharcard_no='{}''.format(p1))
     
     dat=cur.fetchall()
     a=[]
