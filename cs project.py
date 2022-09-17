@@ -110,7 +110,7 @@ def getinfo():
     global x1
     o1=x1.get()
     cur.execute("select * from appointment_details"
-    "where Aadhar_no={}".format(o1))
+    "where Aadhar_no='{}'".format(o1))
     data=cur.fetchone()
     print(data)
     messagebox.showinfo("Data","info in shell")
